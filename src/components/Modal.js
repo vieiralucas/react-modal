@@ -35,16 +35,16 @@ export default class Modal extends Component {
       PropTypes.string,
       PropTypes.shape({
         base: PropTypes.string.isRequired,
-        afterOpen: PropTypes.string.isRequired,
-        beforeClose: PropTypes.string.isRequired
+        afterOpen: PropTypes.string,
+        beforeClose: PropTypes.string
       })
     ]),
     overlayClassName: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.shape({
         base: PropTypes.string.isRequired,
-        afterOpen: PropTypes.string.isRequired,
-        beforeClose: PropTypes.string.isRequired
+        afterOpen: PropTypes.string,
+        beforeClose: PropTypes.string
       })
     ]),
     appElement: PropTypes.instanceOf(SafeHTMLElement),
